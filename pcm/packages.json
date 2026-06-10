@@ -4,7 +4,7 @@
             "$schema": "https://go.kicad.org/pcm/schemas/v1",
             "name": "sikit",
             "description": "Signal integrity analysis for the open board",
-            "description_full": "Opens the board you have in pcbnew straight in sikit: trace impedance, S-parameters, eye diagrams, crosstalk, return-path checks. Physics comes from the circuitcore engines. Linux only for now; needs Qt6, libnng1 and libprotobuf at runtime.",
+            "description_full": "Opens the board you have in pcbnew straight in sikit: trace impedance, S-parameters, eye diagrams, crosstalk, return-path checks. Physics comes from the circuitcore engines. Linux only for now; needs Qt6, libnng1 and libprotobuf at runtime. On KiCad 9 run: chmod +x ~/.local/share/kicad/9.0/3rdparty/plugins/com_unsignedchad_sikit/sikit-kicad after install (KiCad 10 sets this automatically).",
             "identifier": "com.unsignedchad.sikit",
             "type": "plugin",
             "author": {
@@ -33,9 +33,9 @@
                     ],
                     "runtime": "ipc",
                     "download_url": "https://github.com/UnsignedChad/sikit-kicad/releases/download/v0.1.0/sikit-kicad-pcm-0.1.0-linux-x64.zip",
-                    "download_sha256": "b6a6d6347c8e123894f627c8e165daf6471fae0a5637935b9da89ed22f9fd441",
-                    "download_size": 684079,
-                    "install_size": 1895958
+                    "download_sha256": "7442621a456379b53daafbfe85835cf4701f6d2d99b17f285dcf1745177b5e95",
+                    "download_size": 684165,
+                    "install_size": 1896110
                 }
             ]
         }

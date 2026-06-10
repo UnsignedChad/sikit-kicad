@@ -30,12 +30,29 @@ protobuf-compiler. circuitcore is fetched automatically.
     cmake -B build -G Ninja
     cmake --build build
 
-## use inside kicad
+## install from the plugin manager
+
+Open KiCad > Plugin and Content Manager > Manage..., add
+
+    https://raw.githubusercontent.com/UnsignedChad/sikit-kicad/main/pcm/repository.json
+
+then pick the "sikit (UnsignedChad)" repository and install sikit.
+Enable the API server (Preferences > Plugins) and restart pcbnew; the
+sikit button shows up at the right end of the top toolbar.
+
+KiCad 9 on Linux does not preserve the executable bit when it extracts
+packages, so after install run:
+
+    chmod +x ~/.local/share/kicad/9.0/3rdparty/plugins/com_unsignedchad_sikit/sikit-kicad
+
+KiCad 10 sets it automatically (pcm extraction restores zip modes).
+
+## developer install (from a checkout)
 
     scripts/install-local.sh
 
-then enable the API server (Preferences > Plugins) and restart pcbnew.
-A "sikit" button shows up on the pcb editor toolbar.
+symlinks the build into the user plugins dir; same API-server +
+restart notes apply.
 
 ## test
 

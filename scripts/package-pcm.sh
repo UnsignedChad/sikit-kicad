@@ -32,7 +32,10 @@ meta = {
         "Opens the board you have in pcbnew straight in sikit: trace "
         "impedance, S-parameters, eye diagrams, crosstalk, return-path "
         "checks. Physics comes from the circuitcore engines. Linux only "
-        "for now; needs Qt6, libnng1 and libprotobuf at runtime."),
+        "for now; needs Qt6, libnng1 and libprotobuf at runtime. On "
+        "KiCad 9 run: chmod +x ~/.local/share/kicad/9.0/3rdparty/"
+        "plugins/com_unsignedchad_sikit/sikit-kicad after install "
+        "(KiCad 10 sets this automatically)."),
     "identifier": "com.unsignedchad.sikit",
     "type": "plugin",
     "author": {"name": "Charles Kennedy",
