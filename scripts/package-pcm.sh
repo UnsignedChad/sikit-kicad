@@ -39,7 +39,7 @@ meta = {
                "contact": {"web": "https://github.com/UnsignedChad"}},
     "license": "GPL-3.0",  # pcm enum has no or-later form
     "resources": {"homepage": "https://github.com/UnsignedChad/sikit-kicad"},
-    "tags": ["signal integrity", "analysis", "impedance", "s-parameters"],
+    "tags": ["signal-integrity", "analysis", "impedance", "s-parameters"],
 }
 
 version_entry = {
@@ -100,6 +100,17 @@ repo = {
 }
 open(os.path.join(here, "pcm", "repository.json"), "w").write(
     json.dumps(repo, indent=4))
+
+# validate against kicads shipped schema so pcm never sees a bad file
+try:
+    import jsonschema
+    schema = json.load(open("/usr/share/kicad/schemas/pcm.v1.schema.json"))
+    jsonschema.validate(packages, {**schema, "$ref": "#/definitions/PackageArray"})
+    jsonschema.validate(repo, {**schema, "$ref": "#/definitions/Repository"})
+    jsonschema.validate(meta_zip, {**schema, "$ref": "#/definitions/Package"})
+    print("schema validation: ok")
+except ImportError:
+    print("warning: python3-jsonschema not installed, skipping validation")
 
 print(f"zip: {zip_path}")
 print(f"sha256: {sha}")
