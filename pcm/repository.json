@@ -9,8 +9,8 @@
     },
     "packages": {
         "url": "https://raw.githubusercontent.com/UnsignedChad/sikit-kicad/main/pcm/packages.json",
-        "sha256": "942cebdcbee8c3691ae0ef696b6d5bda1a1c98eeaac191f962c063cbad988f15",
-        "update_timestamp": 1781050022,
-        "update_time_utc": "2026-06-10 00:07:02"
+        "sha256": "69f419d98f9f0ccc56e8eefedfad45dc8abc934138e6ecf6341f52bc75c273d4",
+        "update_timestamp": 1781050221,
+        "update_time_utc": "2026-06-10 00:10:21"
     }
 }

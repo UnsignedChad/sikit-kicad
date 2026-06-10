@@ -37,7 +37,7 @@ meta = {
     "type": "plugin",
     "author": {"name": "Charles Kennedy",
                "contact": {"web": "https://github.com/UnsignedChad"}},
-    "license": "GPL-3.0-or-later",
+    "license": "GPL-3.0",  # pcm enum has no or-later form
     "resources": {"homepage": "https://github.com/UnsignedChad/sikit-kicad"},
     "tags": ["signal integrity", "analysis", "impedance", "s-parameters"],
 }
