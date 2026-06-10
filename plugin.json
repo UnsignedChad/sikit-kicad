@@ -1,0 +1,29 @@
+{
+    "$schema": "https://go.kicad.org/api/schemas/v1",
+    "identifier": "com.unsignedchad.sikit",
+    "name": "sikit",
+    "description": "Signal integrity for the open board: trace impedance, S-parameters, eye diagrams, crosstalk, return paths.",
+    "runtime": {
+        "type": "exec"
+    },
+    "actions": [
+        {
+            "identifier": "open-board",
+            "name": "Analyze in sikit",
+            "description": "Open the current board in sikit for signal integrity analysis",
+            "show-button": true,
+            "scopes": [
+                "pcb"
+            ],
+            "entrypoint": "sikit-kicad",
+            "icons-light": [
+                "resources/icon-light.png",
+                "resources/icon-light@2x.png"
+            ],
+            "icons-dark": [
+                "resources/icon-dark.png",
+                "resources/icon-dark@2x.png"
+            ]
+        }
+    ]
+}
