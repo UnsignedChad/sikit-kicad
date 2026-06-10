@@ -1,0 +1,16 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "sikit (UnsignedChad)",
+    "maintainer": {
+        "name": "Charles Kennedy",
+        "contact": {
+            "web": "https://github.com/UnsignedChad"
+        }
+    },
+    "packages": {
+        "url": "https://raw.githubusercontent.com/UnsignedChad/sikit-kicad/main/pcm/packages.json",
+        "sha256": "942cebdcbee8c3691ae0ef696b6d5bda1a1c98eeaac191f962c063cbad988f15",
+        "update_timestamp": 1781050022,
+        "update_time_utc": "2026-06-10 00:07:02"
+    }
+}
